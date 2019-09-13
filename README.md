@@ -31,7 +31,7 @@ LIRI was constructed using NPM Packages and APIs for request informations based 
 
 ### Technologies
 
-Javascript
+# Javascript
 Node.js
 NPM Packages:
 * Axios
