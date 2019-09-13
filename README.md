@@ -32,17 +32,17 @@ LIRI was constructed using NPM Packages and APIs for request informations based 
 ### Technologies
 
 # Javascript
-Node.js
-NPM Packages:
-* Axios
-* Dotenv
-* Node-Spotify-Api
-* Moment
-* FS.js
-APIs:
-- Bands In Town API
-- Spotify API
-- OMDB Movies API
+# Node.js
+# NPM Packages:
+1 Axios
+2 Dotenv
+3 Node-Spotify-Api
+4 Moment
+5 FS.js
+# APIs:
+1 Bands In Town API
+2 Spotify API
+3 OMDB Movies API
 
 
 ---
