@@ -13,6 +13,8 @@ LIRI is a Language Interpretation and Recognition Interface.
 
 LIRI was constructed using NPM Packages and APIs for request informations based on the command line user inputs on the and gives back data.
 
+---
+
 ### Technologies
 
 ##### Javascript
