@@ -13,36 +13,66 @@ LIRI is a Language Interpretation and Recognition Interface.
 
 LIRI was constructed using NPM Packages and APIs for request informations based on the command line user inputs on the and gives back data.
 
+### Technologies
+
+##### Javascript
+##### Node.js
+##### NPM Packages: 
+* Axios
+* Dotenv
+* Node-Spotify-Api
+* Moment and FS.js
+##### APIs: 
+* Bands In Town API
+* Spotify API 
+* OMDB Movies API
+
 ---
 
 ### How LIRI Works
 
-- Minimum Content for the read.me:
-  Clearly state the problem the app is trying to solve (i.e. what is it doing and why)
-  Give a high-level overview of how the app is organized
-  Give start-to-finish instructions on how to run the app
-  Include screenshots, gifs or videos of the app functioning
-  Contain a link to a deployed version of the app
-  Clearly list the technologies used in the app
-  State your role in the app development
+Clck here to see the video with demo: 
 
+LIRI code is organized in 4 different commands, each one taking information from API or by fs.readfile method:
 
----
+#### A. concert-this command line:
+When the user enters in the command line the input <$ node liri.js concert-this "name of some band or artist">, the app will bring at the terminal (node.js) the following informations based in the Bands In Town API:
+* Venue of the concert
+* Location of the venue
+* Date of the event
 
-### Technologies
+![picture alt](/images/concert-this.png "Concert of a artist/band")
 
-# Javascript
-# Node.js
-# NPM Packages:
-1 Axios
-2 Dotenv
-3 Node-Spotify-Api
-4 Moment
-5 FS.js
-# APIs:
-1 Bands In Town API
-2 Spotify API
-3 OMDB Movies API
+#### B. spotify-this-song command line:
+When the user enters in the command line the input <$ node spotify-this-song.js "name of some song">, the app will bring at the terminal (node.js) the following informations based in the Spotify API:
+* Name of the artist
+* Name of the song
+* URL of the song
+* Name of the album
 
+![picture alt](/images/spotify-this-song.png "Song of a artist/band")
+
+#### C. movie-this command line:
+When the user enters in the command line the input <$ node liri.js movie-this "name of some movie">, the app will bring at the terminal (node.js) the following informations based in the OMDB API:
+* Movie's name
+* Movie's year
+* Movie's IMDB Rating
+* Movie's Rotten Tomatoes Rating
+* Movie's country
+* Movie's language
+* Movie's plot
+* Movie's actor
+
+![picture alt](/images/movie-this.png "Movies")
+
+#### D. do-what-it-says command line:
+When the user enters in the command line the input <$ node liri.js do-what-it-says>, the app will read the file random.txt and take the information inside that as parameters for the request to the APIs. 
+As example, the random.text contains <spotify-this-song, "I Want it That Way,">, so, the app will bring at the terminal (node.js) the following informations based in the Spotify API:
+* Name of the artist: Backstreet Boys
+* Name of the song: I Want It That Way
+* URL: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=04b4797f5fa34b0aafa081a1a5a31f0b
+* Name of the album: The Hits--Chapter One
+
+![picture alt](/images/do-what-it-says.png "fs.readFile method")
 
 ---
