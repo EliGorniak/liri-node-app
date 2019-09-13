@@ -72,7 +72,7 @@ When the user enters in the command line the input <$ node liri.js do-what-it-sa
 As example, the random.text contains <spotify-this-song, "I Want it That Way,">, so, the app will bring at the terminal (node.js) the following informations based in the Spotify API:
 * Name of the artist: Backstreet Boys
 * Name of the song: I Want It That Way
-* URL: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=04b4797f5fa34b0aafa081a1a5a31f0b
+* URL: "https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=04b4797f5fa34b0aafa081a1a5a31f0b"
 * Name of the album: The Hits--Chapter One
 
 ![picture alt](/images/do-what-it-says.png "fs.readFile method")
